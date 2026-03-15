@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feComposite in="blur" in2="SourceGraphic" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Card background -->
+  <rect x="0.5" y="0.5" width="399" height="219" rx="16" ry="16" fill="#161b22" stroke="rgba(255,110,64,0.3)" stroke-width="1"/>
+
+  <!-- Top glow -->
+  <rect x="40" y="0" width="320" height="2" rx="1" fill="#ff6e40" opacity="0.4" filter="url(#glow)"/>
+
+  <!-- Playing card suits decoration -->
+  <g font-family="serif" fill="#ff6e40" opacity="0.08">
+    <text x="300" y="28" font-size="20">♠</text>
+    <text x="330" y="22" font-size="16">♥</text>
+    <text x="355" y="32" font-size="18">♦</text>
+    <text x="320" y="48" font-size="17">♣</text>
+    <text x="365" y="52" font-size="14">♠</text>
+    <text x="345" y="58" font-size="20">♥</text>
+    <text x="375" y="38" font-size="15">♣</text>
+  </g>
+
+  <!-- Icon -->
+  <text x="28" y="44" font-size="26">🃏</text>
+
+  <!-- Title -->
+  <text x="24" y="82" font-family="'Courier New',monospace" font-size="22" font-weight="bold" fill="white">balatro-ai</text>
+
+  <!-- Description -->
+  <text font-family="'Courier New',monospace" font-size="13" fill="#8b949e">
+    <tspan x="24" y="110">AI bot that plays Balatro autonomously —</tspan>
+    <tspan x="24" dy="18">scoring engine + LLM-powered strategy</tspan>
+  </text>
+
+  <!-- Divider -->
+  <line x1="24" y1="165" x2="376" y2="165" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Bottom bar -->
+  <circle cx="24" cy="190" r="4" fill="#3776AB"/>
+  <text x="34" y="194" font-family="'Courier New',monospace" font-size="12" fill="#8b949e">Python</text>
+  <text x="376" y="194" font-family="'Courier New',monospace" font-size="12" fill="#e3b341" text-anchor="end">★</text>
+</svg>

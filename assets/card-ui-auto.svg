@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feComposite in="blur" in2="SourceGraphic" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Card background -->
+  <rect x="0.5" y="0.5" width="399" height="219" rx="16" ry="16" fill="#161b22" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+
+  <!-- Top glow -->
+  <rect x="40" y="0" width="320" height="2" rx="1" fill="#a78bfa" opacity="0.4" filter="url(#glow)"/>
+
+  <!-- UI wireframe decoration -->
+  <g opacity="0.08" stroke="#a78bfa" stroke-width="0.5" fill="none" stroke-dasharray="3,3">
+    <rect x="300" y="14" width="80" height="35" rx="3"/>
+    <rect x="310" y="22" width="40" height="20" rx="2"/>
+    <rect x="355" y="22" width="20" height="12" rx="2"/>
+    <rect x="308" y="52" width="55" height="8" rx="1"/>
+    <line x1="300" y1="30" x2="300" y2="55" stroke-dasharray="2,2"/>
+    <line x1="385" y1="14" x2="385" y2="52" stroke-dasharray="2,2"/>
+  </g>
+
+  <!-- Icon -->
+  <text x="28" y="44" font-size="26">🎯</text>
+
+  <!-- Title -->
+  <text x="24" y="82" font-family="'Courier New',monospace" font-size="22" font-weight="bold" fill="white">UI-auto</text>
+
+  <!-- Description -->
+  <text font-family="'Courier New',monospace" font-size="13" fill="#8b949e">
+    <tspan x="24" y="110">Dynamic view automation for UI</tspan>
+    <tspan x="24" dy="18">testing &amp; intelligent interaction</tspan>
+  </text>
+
+  <!-- Divider -->
+  <line x1="24" y1="165" x2="376" y2="165" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Bottom bar -->
+  <circle cx="24" cy="190" r="4" fill="#3178C6"/>
+  <text x="34" y="194" font-family="'Courier New',monospace" font-size="12" fill="#8b949e">TypeScript</text>
+  <text x="376" y="194" font-family="'Courier New',monospace" font-size="12" fill="#e3b341" text-anchor="end">★</text>
+</svg>
